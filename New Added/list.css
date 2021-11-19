@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	
+	font-family: "Roboto", sans-serif;
+	background-image: linear-gradient(to top, #ff0000, #e02a15, #c03821, #a13f2b, #824233, #7d4a3e, #775249, #6f5954, #826b66, #967e79, #aa928c, #bea6a0);
+}
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+/*Navigation Bar Starts*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background: rgba(0, 0, 0,0.5);
+    
+}
+.navbar-brand img
+{
+    height: 60px;
+    padding-left: 40px;
+}
+.navbar-nav li 
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right!important;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #fcf8f8d7!important;
+}
+.navbar-toggler
+{
+    border: none!important;
+    color: rgb(255, 64, 64)!important;
+}
+.nav-link
+{
+    color: rgb(20, 6, 6)!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*Navigation Bar Starts*/
+.profile-tab-nav {
+	min-width: 250px;
+	
+}
+.tab-content {
+	flex: 1;
+	min-width: 250px;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+	border-radius: 0;
+	color: rgb(51, 51, 51);
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+.outer{
+    max-width: 130%;
+    height: 600px;
+    background-color: cornsilk;
+}

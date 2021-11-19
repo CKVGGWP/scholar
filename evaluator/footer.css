@@ -1,0 +1,45 @@
+*
+{
+    box-sizing: border-box;
+}
+/*Footer*/
+.footer
+{
+    background: maroon;
+    color: white;
+    height: 250px;
+    position: relative;
+    text-decoration: none;
+    padding-top: 0px;
+    padding-left: 25px;
+    width: 100%;
+    
+}
+.footer .footer-bottom
+{
+    border-bottom: 1px solid black;
+    background: #f2f2f2;
+    color: black;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+/* Create three equal columns that floats next to each other */
+.column 
+{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+  }

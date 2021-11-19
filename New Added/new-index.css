@@ -1,0 +1,249 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+   background-image: url(Images/bg-canvas.gif);
+    min-height: 100vh;
+}
+/*---------Navigation---------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background: rgba(0, 0, 0,0.5);
+    
+}
+.navbar-brand img
+{
+    height: 60px;
+    padding-left: 40px;
+}
+.navbar-nav li 
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #080000!important;
+}
+.navbar-toggler
+{
+    border: none!important;
+    color: rgb(255, 64, 64)!important;
+}
+.nav-link
+{
+    color: rgb(255, 255, 255)!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*-------Announcement--------*/
+
+.container{
+
+  width: 100%;
+  max-width: 900px;
+  height: 110vh;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  transition: height 0.2s ease;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  margin:  50px auto;
+  padding: 30px 10px;
+}
+.container.active{
+  height: 590px;
+}
+.container .wrapper{
+  width: 500px;
+  display: flex;
+}
+.container .wrapper section{
+  width: 100%;
+  background: #fff;
+  position: absolute
+}
+.container .post{
+  transition: margin-left 0.18s ease;
+}
+.container.active .post{
+  margin-left: -500px;
+}
+.post header{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 17px 0;
+  text-align: center;
+  border-bottom: 1px solid #bfbfbf;
+}
+.post form{
+  margin: 20px 25px;
+}
+.post form .content,
+.list li .column{
+  display: flex;
+  align-items: center;
+}
+.post form .content img{
+  cursor: default;
+  max-width: 52px;
+}
+form :where(textarea, button){
+  width: 100%;
+  outline: none;
+  border: none;
+}
+form textarea{
+  resize: none;
+  font-size: 18px;
+  margin-top: 30px;
+  min-height: 200px;
+}
+form textarea::placeholder{
+  color: #858585;
+}
+form textarea:focus::placeholder{
+  color: #b3b3b3;
+}
+form .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+form .options{
+  height: 57px;
+  margin: 15px 0;
+  padding: 0 15px;
+  border-radius: 7px;
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+#file
+{
+  display: none;
+}
+form .options :where(.list, li){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+form .options p{
+  color: #595959;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+}
+form .options .list{
+  list-style: none;
+}
+.options .list li{
+  height: 42px;
+  width: 42px;
+  margin: 0 -1px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.options .list li:hover{
+  background: #f0f1f4;
+}
+.options .list li img{
+  width: 23px;
+  padding-right: 10px ;
+}
+form button{
+  height: 53px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #BCC0C4;
+  cursor: no-drop;
+  border-radius: 7px;
+  background: #e2e5e9;
+  transition: all 0.3s ease;
+}
+form textarea:valid ~ button{
+  color: #fff;
+  cursor: pointer;
+  background: #4599FF;
+}
+form textarea:valid ~ button:hover{
+  background: #1a81ff;
+}
+.scroll-div
+{
+  width: 90%;
+  height: 250px;
+  overflow-y: scroll;
+  position: relative;
+  margin:  50px auto;
+  font-size: 18px;
+  text-align: center;
+  padding: 18px 0;
+}
+.uploadFile{
+  background-color: #ffffff;
+  min-width: 450px;
+  position: relative;
+  padding: 50px 20px;
+  border-radius: 7px;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+input[type="file"]{
+  display: none;
+}
+label{
+  display: block;
+  position: relative;
+  background-color: #025bee;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  width: 300px;
+  padding: 18px 0;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.uploadFile p{
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+#images{
+  width: 90%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+figure{
+  width: 45%;
+}
+img{
+  width: 100%;
+}
+figcaption{
+  text-align: center;
+  font-size: 2.4vmin;
+  margin-top: 0.5vmin;
+}

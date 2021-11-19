@@ -1,0 +1,55 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-----Cover-----*/
+body
+{
+    background-image:url(Images/capitol.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.announce{
+    font-size: 32px;
+    padding: 0px 15px ;
+    margin-left: 20px;
+    outline: none;
+    background:rgba(255,255,255,.2);
+    color:rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    margin-top: 1rem;
+    cursor: pointer;
+    transition:.2s linear;
+}
+
+.announce:hover{
+    background:rgba(255,255,255,.5);
+    color:#555;
+}
+/*-----Slider-----*/
+#slider
+{
+    margin: auto;
+    margin-top: 30px;
+    max-width: 75%;
+    max-height: 900px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption
+{
+    color: #000;
+    font-size: 42px;
+}

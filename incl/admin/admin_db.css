@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	
+	font-family: "Roboto", sans-serif;
+	background-image: url('Images/capitol.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 80px;
+}
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+.area
+{
+    background: linear-gradient( to top, rgba(200, 200, 200, 0.5), rgba(255,255,255, 1));
+}
+input[type="date"]
+{
+    background-color:white;
+    padding: 15px;
+    transform: translate(-50, -50%);
+    padding-left: 30px ;
+    left: 50%;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 20px;
+    outline: none;
+}
+h1 {
+    text-align: center;
+    margin-top: 30%;
+    white-space: nowrap;
+    margin-left: 30px;
+    align-self: center;
+}
+
+::-webkit-calendar-picker-indicator:hover
+{
+    background-color: rgb(183, 183, 248);
+}
+::-webkit-calendar-picker-indicator
+{
+    background-color: rgb(83, 83, 250);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+
+} 
+button[type="submit"]
+{
+	display: block;
+	margin-left: auto;
+	border: none;
+ 	outline: none;
+  	padding: 5px 20px;
+  	border-radius: 5px;
+  	cursor: pointer;
+  	margin-bottom: 25px;
+  	color: #080000;
+  	text-decoration: none;
+	white-space: nowrap;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+	font-weight: 400;
+	width: 200px;	
+	max-width: 60%;
+	margin-top: 10px;
+}
+.db
+{
+    background-color:white;
+    align-items: center;
+    width: 90%;
+    margin-left: 20px;
+    padding: 20px 20px;
+    border-color: black;
+    border-radius: 5px;
+}

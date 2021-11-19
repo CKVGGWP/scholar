@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Account Settings UI Design</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="admin_announce.css">
+</head>
+<body>
+	<section class="py-5 my-5">
+		<div class="container">
+			<button class="btn btn-primary" >View Announcement</button>
+			<h1 class="mb-5">New Announcement</h1>
+			<div class="bg-transparent shadow rounded-lg d-sm-flex">
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="image-tab" data-toggle="pill" href="#image" role="tab" aria-controls="image" aria-selected="true">
+							Add Image
+						</a>
+						<a class="nav-link" id="video-tab" data-toggle="pill" href="#video" role="tab" aria-controls="video" aria-selected="false">
+							Add Video
+						</a>
+						<a class="nav-link" id="docu-tab" data-toggle="pill" href="#docu" role="tab" aria-controls="docu" aria-selected="false">
+							Add File
+						</a>
+					</div>
+				
+		<!----Image----->
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="image" role="tabpanel" aria-labelledby="image-tab">
+						<h3 class="mb-4"></h3>
+						<div class="row">
+							<div class="form-input">
+								<div class="col-md-4">
+                                	<input type="file" name="" id="image">
+                                	<label for="image"><i class="fa fa-image"></i></label>
+								</div>
+							</div>
+						</div>
+					</div>
+		<!---- /Image ----->
+
+
+        <!---- FILE----->
+        <div class="tab-pane fade" id="docu" role="tabpanel" aria-labelledby="docu-tab">
+            <h3 class="mb-4"></h3>
+           <div class="row">
+               <div class="col-md-9">
+                   <input type="file" name="" id="docu">
+                   <label><i class="fa fa-image"></i></label>
+                </div>
+
+            </div>
+       </div>
+    <!---- /FILE----->
+
+
+		<!---- VIDEO----->
+						<div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+							<h3 class="mb-4"></h3>
+							<div class="row">
+								<div class="col-md-9">
+                                    <input type="file" name="" id="video">
+                                    <label ><i class="fa fa-image"></i></label>
+								</div>
+
+							</div>
+						</div>
+		<!---- /VIDEO----->
+
+        <!---- VIDEO----->
+						<div class="tab-pane fade" id="ex" role="tabpanel" aria-labelledby="ex-tab">
+							<h3 class="mb-4"></h3>
+							<div class="row">
+								<div class="col-md-9">
+                                    <input type="file" name="" id="ex">
+                                    <label><i class="fa fa-image"></i></label>
+								</div>
+
+							</div>
+						</div>
+		<!---- /VIDEO----->
+		<button type="submit" class="btn btn-primary">Preview</button>
+        <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+				</div>
+			</div>
+		</div>
+    </div>
+	</section>
+
+    <div>
+        
+    </div>
+
+</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
